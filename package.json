@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && gh-pages -d out"
+    "deploy": "next build && gh-pages -d out",
+    "bd" : "npm run build && npm run deploy"
   },
   "homepage": "https://angel-dev-cse.github.io",
   "dependencies": {

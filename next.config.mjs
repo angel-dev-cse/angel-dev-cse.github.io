@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
-  basePath: "/angel-dev-cse.github.io",
-  assetPrefix: "/angel-dev-cse.github.io/",
   output: "export",
 };
 
