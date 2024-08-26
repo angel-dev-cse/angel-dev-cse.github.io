@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="154.857 139.071 200.295 180.764" width="200.295" height="162.764" xmlns="http://www.w3.org/2000/svg"
+  xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="217.828" y1="262.171" x2="217.828" y2="293.171" id="gradient-2"
+      gradientTransform="matrix(0.777126, -0.079632, 0.13204, 1.214362, 54.873283, -33.693501)">
+      <stop offset="0" style="" />
+      <stop offset="1" style="stop-color: rgb(14, 14, 14);" />
+    </linearGradient>
+    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%"
+      bx:preset="drop-shadow 1 10 10 2 1 rgba(0,0,0,0.3)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="10" dy="10" />
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="2" />
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)" />
+      <feComposite in2="offsetblur" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="252.945" cy="276.607" r="4.958" id="gradient-3"
+      gradientTransform="matrix(0.741336, 0.018016, -0.164469, 8.632905, 114.458885, -2118.790295)">
+      <stop offset="0" style="stop-color: rgb(5.4902% 5.4902% 5.4902%)" />
+      <stop offset="1" style="" />
+    </radialGradient>
+    <filter id="inner-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%"
+      bx:preset="inner-shadow 1 0 0 40 0.46 rgba(0,0,0,0.7)">
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="40" />
+      <feComposite operator="out" in="SourceGraphic" />
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="0.92" />
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color" />
+      <feComposite operator="in" in="color" in2="choke" result="shadow" />
+      <feComposite operator="over" in="shadow" in2="SourceGraphic" />
+    </filter>
+    <filter id="gaussian-blur-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%"
+      bx:preset="gaussian-blur 1 0.4">
+      <feGaussianBlur stdDeviation="0.4 0.4" edgeMode="none" />
+    </filter>
+    <filter id="gaussian-blur-filter-3" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%"
+      bx:preset="gaussian-blur 1 0.5">
+      <feGaussianBlur stdDeviation="0.5 0.5" edgeMode="none" />
+    </filter>
+    <filter id="gaussian-blur-filter-2" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%"
+      bx:preset="gaussian-blur 1 0.3">
+      <feGaussianBlur stdDeviation="0.3 0.3" edgeMode="none" />
+    </filter>
+    <filter id="gaussian-blur-filter-1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%"
+      bx:preset="gaussian-blur 1 0.2">
+      <feGaussianBlur stdDeviation="0.2 0.2" edgeMode="none" />
+    </filter>
+  </defs>
+  <g>
+    <title>pc v1.0</title>
+    <g style="">
+      <title>3d PC</title>
+      <path style="fill: url('#gradient-2'); stroke: rgb(15, 15, 15); filter: url('#drop-shadow-filter-0');"
+        d="M 232.29 298.01 L 272.495 301.208 L 290.484 283.749 C 264.731 274.289 241.843 274.786 225.445 276.909 L 232.29 298.01 Z">
+        <title>base</title>
+      </path>
+      <path style="fill-rule: nonzero; fill: url('#gradient-3'); stroke: rgb(33, 33, 33);"
+        d="M 249.857 256.972 L 249.857 281.927 C 249.806 285.858 257.665 286.592 258.421 282.604 L 258.421 257.069 L 255.852 257.069 C 255.791 269.2 252.525 269.103 252.426 257.069 L 249.857 256.972 Z">
+        <title>stand</title>
+      </path>
+      <path style="stroke: rgb(37, 37, 37); fill: rgb(3, 3, 3); filter: url('#inner-shadow-filter-0');"
+        d="M 154.857 150.072 L 353.998 139.071 L 353.998 269.071 L 154.857 252.752 L 154.857 150.072 Z">
+        <title>display</title>
+      </path>
+      <path
+        style="stroke: rgb(51, 51, 51); fill: rgb(51, 51, 51); stroke-linejoin: round; paint-order: stroke; stroke-linecap: round;"
+        d="M 355.152 139.563 L 355.09 267.232 L 354.204 269.115 L 354.241 139.094 L 355.152 139.563 Z">
+        <title>right bar</title>
+      </path>
+      <path style="stroke-linecap: round; stroke-linejoin: round; fill: rgb(51, 51, 51); stroke: rgb(31, 31, 31);"
+        d="M 290.937 283.936 L 272.551 301.274 L 272.405 300.142 L 290.405 283.681 L 290.937 283.936 Z">
+        <title>stand right bar</title>
+      </path>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke: rgb(23, 23, 23); fill: rgb(23, 23, 23);"
+        d="M 271.839 301.835 L 232.658 298.934 L 232.65 297.619 L 271.612 300.692 L 271.839 301.835 Z">
+        <title>stand front bar</title>
+      </path>
+      <ellipse style="stroke: rgba(64, 255, 47, 0); stroke-width: 0px; fill: rgb(141, 255, 59);" cx="339.034"
+        cy="265.002" rx="1.034" ry="1.002">
+        <title>power led</title>
+        <animate attributeName="fill-opacity" values="0.2;1;0.2" dur="4s" keyTimes="0; 0.5; 1"
+          keySplines="0.42 0 1 1; 0 0 0.58 1" calcMode="spline" repeatCount="indefinite">
+          <title>Monitor LED Anim</title>
+        </animate>
+      </ellipse>
+    </g>
+    <path
+      style="fill: rgb(5, 5, 5); stroke: rgb(51, 51, 51); stroke-miterlimit: 1; stroke-width: 0px; pointer-events: none;"
+      d="M 157.339 154.77 L 157.249 248.244 L 187 250.374 L 187 153.2 L 157.339 154.77 Z" />
+    <g style="filter: url('#gaussian-blur-filter-0');">
+      <title>Files pane</title>
+      <path
+        style="fill: rgb(153, 90, 1); stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5);"
+        d="M 158.834 156.261 L 183.346 155.585 L 183.37 157.782 L 158.846 158.279 L 158.834 156.261 Z" />
+      <path
+        style="fill: rgb(194, 175, 56); stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5);"
+        d="M 158.834 159.53 L 179.927 159.141 L 179.947 161.079 L 158.844 161.548 L 158.834 159.53 Z" />
+      <path
+        style="fill: rgb(153, 90, 1); stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5);"
+        d="M 158.885 162.783 L 183.398 162.106 L 183.421 164.304 L 158.897 164.8 L 158.885 162.783 Z" />
+      <path
+        style="fill: rgb(107, 230, 87); stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5);"
+        d="M 158.951 166.077 L 176.898 165.598 L 176.916 167.536 L 158.959 168.094 L 158.951 166.077 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(69, 73, 68);"
+        d="M 159.037 169.164 L 173.297 168.884 L 173.311 170.823 L 159.043 171.181 L 159.037 169.164 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(69, 73, 68);"
+        d="M 158.974 172.192 L 174.562 171.948 L 174.577 173.887 L 158.982 174.21 L 158.974 172.192 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(69, 73, 68); mix-blend-mode: screen;"
+        d="M 158.785 185.372 L 161.076 185.363 L 161.079 187.301 L 158.786 187.39 L 158.785 185.372 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(45, 77, 190); mix-blend-mode: screen;"
+        d="M 158.774 188.825 L 161.065 188.815 L 161.068 190.753 L 158.775 190.842 L 158.774 188.825 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(6, 146, 64); mix-blend-mode: screen;"
+        d="M 158.775 192.219 L 161.066 192.209 L 161.069 194.147 L 158.776 194.236 L 158.775 192.219 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(6, 146, 64); mix-blend-mode: screen;"
+        d="M 158.775 199.186 L 161.066 199.176 L 161.069 201.114 L 158.776 201.203 L 158.775 199.186 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(160, 246, 138); mix-blend-mode: screen;"
+        d="M 158.775 195.792 L 161.066 195.782 L 161.069 197.72 L 158.776 197.809 L 158.775 195.792 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(146, 68, 6); mix-blend-mode: screen;"
+        d="M 160.922 203.127 L 163.213 203.116 L 163.216 205.054 L 160.923 205.144 L 160.922 203.127 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(160, 246, 138); mix-blend-mode: screen;"
+        d="M 162.947 207.306 L 165.238 207.295 L 165.241 209.234 L 162.948 209.323 L 162.947 207.306 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(160, 246, 138); mix-blend-mode: screen;"
+        d="M 162.947 210.974 L 165.238 211.112 L 165.241 213.051 L 162.948 212.992 L 162.947 210.974 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(160, 246, 138); mix-blend-mode: screen;"
+        d="M 163.045 219.378 L 165.336 219.516 L 165.339 221.455 L 163.046 221.396 L 163.045 219.378 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(160, 246, 138); mix-blend-mode: screen;"
+        d="M 162.851 215.303 L 165.142 215.442 L 165.145 217.38 L 162.852 217.32 L 162.851 215.303 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(146, 68, 6); mix-blend-mode: screen;"
+        d="M 160.959 223.302 L 163.25 223.439 L 163.253 225.377 L 160.96 225.32 L 160.959 223.302 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(146, 68, 6); mix-blend-mode: screen;"
+        d="M 163.228 227.575 L 165.519 227.713 L 165.522 229.651 L 163.229 229.592 L 163.228 227.575 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(160, 246, 138); mix-blend-mode: screen;"
+        d="M 164.509 231.896 L 166.8 232.033 L 166.803 233.971 L 164.51 233.914 L 164.509 231.896 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(100, 100, 100); mix-blend-mode: screen;"
+        d="M 162.765 185.339 L 179.746 185.729 L 179.762 187.669 L 162.773 187.357 L 162.765 185.339 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(42, 42, 42); mix-blend-mode: screen;"
+        d="M 162.823 188.846 L 180.329 189.27 L 180.345 191.21 L 162.831 190.865 L 162.823 188.846 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(100, 100, 100); mix-blend-mode: screen;"
+        d="M 163.115 192.135 L 176.83 192.433 L 176.843 194.371 L 163.121 194.152 L 163.115 192.135 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(92, 51, 0); mix-blend-mode: screen;"
+        d="M 162.881 195.689 L 176.596 195.986 L 176.609 197.925 L 162.887 197.706 L 162.881 195.689 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(42, 42, 42); mix-blend-mode: screen;"
+        d="M 162.677 199.092 L 179.6 199.48 L 179.615 201.418 L 162.685 201.11 L 162.677 199.092 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(92, 51, 0); mix-blend-mode: screen;"
+        d="M 165.392 203.029 L 173.508 203.192 L 173.515 205.13 L 165.396 205.046 L 165.392 203.029 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(166, 166, 166); mix-blend-mode: screen;"
+        d="M 166.984 207.273 L 182.568 207.576 L 182.583 209.515 L 166.991 209.291 L 166.984 207.273 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(166, 166, 166); mix-blend-mode: screen;"
+        d="M 167.159 211 L 180.735 212.054 L 180.748 213.994 L 167.165 213.018 L 167.159 211 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(166, 166, 166); mix-blend-mode: screen;"
+        d="M 166.984 215.753 L 182.655 216.613 L 182.67 218.554 L 166.991 217.771 L 166.984 215.753 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(166, 166, 166); mix-blend-mode: screen;"
+        d="M 167.072 219.545 L 180.997 220.641 L 181.011 222.581 L 167.078 221.562 L 167.072 219.545 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(92, 51, 0); mix-blend-mode: screen;"
+        d="M 165.217 223.411 L 173.333 224.1 L 173.34 226.037 L 165.221 225.429 L 165.217 223.411 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(92, 51, 0); mix-blend-mode: screen;"
+        d="M 167.052 227.666 L 178.311 228.757 L 178.321 230.697 L 167.058 229.684 L 167.052 227.666 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(166, 166, 166); mix-blend-mode: screen;"
+        d="M 168.775 231.988 L 182.7 233.084 L 182.714 235.024 L 168.781 234.004 L 168.775 231.988 Z" />
+    </g>
+    <path
+      style="stroke: rgb(51, 51, 51); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(7, 7, 7); pointer-events: none;"
+      d="M 188.566 151.171 L 188.495 226.418 L 348.538 235.702 L 348.402 144.673 L 188.566 151.171 Z">
+      <title>editor</title>
+    </path>
+    <g style="pointer-events: none;">
+      <title>Opened files tab</title>
+      <path style="stroke: rgb(51, 51, 51); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(5, 5, 5);"
+        d="M 189.056 151.53 L 188.986 156.361 L 347.629 150.289 L 347.495 145.015 L 189.056 151.53 Z">
+        <title>opened files tabs</title>
+      </path>
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(92, 51, 0); stroke-width: 0px; filter: url('#gaussian-blur-filter-3');"
+        d="M 189.818 152.042 L 207.195 151.337 L 207.21 154.941 L 189.826 155.467 L 189.818 152.042 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); mix-blend-mode: screen; stroke-width: 0px; fill: rgb(189, 171, 55); filter: url('#gaussian-blur-filter-2');"
+        d="M 207.769 151.413 L 229.323 150.602 L 229.343 153.892 L 207.779 154.838 L 207.769 151.413 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); fill: rgb(92, 51, 0); mix-blend-mode: screen; stroke-width: 0px; filter: url('#gaussian-blur-filter-1'); transform-origin: 242.971px 151.751px;"
+        d="M 230.113 150.391 L 255.806 149.686 L 255.827 153.29 L 230.125 153.816 L 230.113 150.391 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); stroke-width: 0px; fill: rgb(104, 224, 85); transform-origin: 270.314px 150.733px;"
+        d="M 256.834 149.67 L 283.749 148.372 L 283.794 151.975 L 256.868 153.095 L 256.834 149.67 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); stroke-width: 0px; fill: rgb(61, 64, 60); transform-origin: 298.735px 149.661px;"
+        d="M 285.205 148.565 L 304.637 147.594 L 312.241 147.214 L 312.264 150.943 L 285.218 152.109 L 285.205 148.565 Z" />
+      <path
+        style="stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke: rgb(5, 5, 5); mix-blend-mode: screen; stroke-width: 0px; fill: rgb(65, 68, 64); transform-origin: 329.645px 148.341px;"
+        d="M 313.899 147.13 L 345.364 145.539 L 345.391 149.761 L 313.914 151.142 L 313.899 147.13 Z" />
+    </g>
+    <g>
+      <title>Code Editor</title>
+      <g style="pointer-events: none; transform-origin: 212.648px 193.774px;">
+        <title>Code block</title>
+        <text
+          style="fill: rgb(153, 62, 157); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-box: fill-box; transform-origin: 50% 50%;"
+          x="-4.778" y="195.526"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 16.578613, -23.754484)">export default function
+          Hero() {</text>
+        <text
+          style="fill: rgb(62, 95, 232); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 16.107124, -19.443441)" x="-4.778"
+          y="195.526">&lt;div className="hidden flex justify-end mt-[-6em] sm:mt-[-16em]"&gt;</text>
+        <text
+          style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 18.474678, -15.168111)" x="-4.778"
+          y="195.526">&lt;Image</text>
+        <text
+          style="fill: rgb(221, 110, 68); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.488px 178.024px;"
+          transform="matrix(0.04951, 0.000004, 0.000042, 0.092515, 20.973459, -3.023661)">
+          <tspan x="-4.778" y="195.526">src="/assets/svg/computer.svg"</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> width={400}</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> height={400}</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> alt="Computer SVG"</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> className="ml-10"</tspan>
+        </text>
+        <text
+          style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 18.796104, 2.178523)" x="-4.778"
+          y="195.526">&lt;Image</text>
+        <text
+          style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.049388, -0.003475, 0.006574, 0.092282, 19.648624, 7.491524)" x="-4.778"
+          y="195.526">&lt;Image</text>
+        <text
+          style="fill: rgb(221, 110, 68); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.488px 178.024px;"
+          transform="matrix(0.049479, 0.001732, -0.003187, 0.09246, 22.147676, 19.635689)">
+          <tspan x="-4.778" y="195.526">src="/assets/svg/computer.svg"</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> width={400}</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> height={400}</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> alt="Computer SVG"</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> className="ml-10"</tspan>
+        </text>
+        <text
+          style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.049502, 0.000864, -0.001533, 0.092504, 19.970148, 24.838058)" x="-4.778"
+          y="195.526">&lt;Image</text>
+        <text
+          style="fill: rgb(62, 95, 232); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.049479, 0.001729, -0.003151, 0.092462, 16.207359, 29.66127)" x="-4.778"
+          y="195.526">&lt;/div&gt;<tspan x="-4.7779998779296875" dy="1em">​</tspan></text>
+        <text
+          style="fill: rgb(153, 62, 157); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.642px 186.67px;"
+          x="-4.778" y="195.526" transform="matrix(0.04949, 0.001401, -0.002539, 0.092481, 16.021267, 33.29147)">export
+          default</text>
+        <text
+          style="fill: rgb(153, 62, 157); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.642px 186.67px;"
+          x="-4.778" y="195.526"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 16.150976, 36.80164)">}</text>
+      </g>
+      <g style="pointer-events: none; transform-origin: 212.648px 193.774px;"
+        transform="matrix(0.844358, 0, 0, 1, 66.946129, -1.937148)">
+        <title>Code block</title>
+        <text
+          style="fill: rgb(153, 62, 157); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-box: fill-box; transform-origin: 50% 50%;"
+          x="-4.778" y="195.526"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 16.578613, -23.754484)">export default function
+          Hero() {</text>
+        <text
+          style="fill: rgb(62, 95, 232); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 16.107124, -19.443441)" x="-4.778"
+          y="195.526">&lt;div className="hidden flex justify-end mt-[-6em] sm:mt-[-16em]"&gt;</text>
+        <text
+          style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 18.474678, -15.168111)" x="-4.778"
+          y="195.526">&lt;Image</text>
+        <text
+          style="fill: rgb(221, 110, 68); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.488px 178.024px;"
+          transform="matrix(0.04951, 0.000004, 0.000042, 0.092515, 20.973459, -3.023661)">
+          <tspan x="-4.778" y="195.526">src="/assets/svg/computer.svg"</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> width={400}</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> height={400}</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> alt="Computer SVG"</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> className="ml-10"</tspan>
+        </text>
+        <text
+          style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 18.796104, 2.178523)" x="-4.778"
+          y="195.526">&lt;Image</text>
+        <text
+          style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.049388, -0.003475, 0.006574, 0.092282, 19.648624, 7.491524)" x="-4.778"
+          y="195.526">&lt;Image</text>
+        <text
+          style="fill: rgb(221, 110, 68); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.488px 178.024px;"
+          transform="matrix(0.049479, 0.001732, -0.003187, 0.09246, 22.147676, 19.635689)">
+          <tspan x="-4.778" y="195.526">src="/assets/svg/computer.svg"</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> width={400}</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> height={400}</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> alt="Computer SVG"</tspan>
+          <tspan x="-4.778" dy="1em">​</tspan>
+          <tspan> className="ml-10"</tspan>
+        </text>
+        <text
+          style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.049502, 0.000864, -0.001533, 0.092504, 19.970148, 24.838058)" x="-4.778"
+          y="195.526">&lt;Image</text>
+        <text
+          style="fill: rgb(62, 95, 232); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+          transform="matrix(0.049479, 0.001729, -0.003151, 0.092462, 16.207359, 29.66127)" x="-4.778"
+          y="195.526">&lt;/div&gt;<tspan x="-4.7779998779296875" dy="1em">​</tspan></text>
+        <text
+          style="fill: rgb(153, 62, 157); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.642px 186.67px;"
+          x="-4.778" y="195.526" transform="matrix(0.04949, 0.001401, -0.002539, 0.092481, 16.021267, 33.29147)">export
+          default</text>
+        <text
+          style="fill: rgb(153, 62, 157); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.642px 186.67px;"
+          x="-4.778" y="195.526"
+          transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 16.150976, 36.80164)">}</text>
+      </g>
+      <path style="fill: rgb(5, 5, 5); stroke: rgba(84, 84, 84, 0.15);" d="M 246.77 158.771 L 246.006 223.32">
+        <title>Code block separator</title>
+      </path>
+      <path
+        style="fill: rgb(5, 5, 5); stroke: rgb(136, 250, 158); stroke-dasharray: 2; transform-origin: 249.045px 213.533px;"
+        d="M 249.089 203.69 L 249.001 223.377">
+        <title>New code indicator</title>
+      </path>
+      <path
+        style="fill: rgb(5, 5, 5); stroke: rgb(78, 66, 207); stroke-dasharray: 5; transform-origin: 192.034px 180.505px;"
+        d="M 192.078 170.662 L 191.99 190.349">
+        <title>Synced code indicator</title>
+      </path>
+    </g>
+    <g transform="matrix(0.433488, 0, 0, 0.409682, 245.798584, 92.894707)" style="pointer-events: none;">
+      <title>Code Preview</title>
+      <text
+        style="fill: rgb(153, 62, 157); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-box: fill-box; transform-origin: 50% 50%;"
+        x="-4.778" y="195.526" transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 16.578613, -23.754484)">export
+        default function Hero() {</text>
+      <text
+        style="fill: rgb(62, 95, 232); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+        transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 16.107124, -19.443441)" x="-4.778" y="195.526">&lt;div
+        className="hidden flex justify-end mt-[-6em] sm:mt-[-16em]"&gt;</text>
+      <text
+        style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+        transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 18.474678, -15.168111)" x="-4.778"
+        y="195.526">&lt;Image</text>
+      <text
+        style="fill: rgb(221, 110, 68); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.488px 178.024px;"
+        transform="matrix(0.04951, 0.000004, 0.000042, 0.092515, 20.973459, -3.023661)">
+        <tspan x="-4.778" y="195.526">src="/assets/svg/computer.svg"</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+        <tspan> width={400}</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+        <tspan> height={400}</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+        <tspan> alt="Computer SVG"</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+        <tspan> className="ml-10"</tspan>
+      </text>
+      <text
+        style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+        transform="matrix(0.04948, -0.001705, 0.003266, 0.092458, 18.796104, 2.178523)" x="-4.778"
+        y="195.526">&lt;Image</text>
+      <text
+        style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+        transform="matrix(0.049388, -0.003475, 0.006574, 0.092282, 19.648624, 7.491524)" x="-4.778"
+        y="195.526">&lt;Image</text>
+      <text
+        style="fill: rgb(221, 110, 68); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.488px 178.024px;"
+        transform="matrix(0.049479, 0.001732, -0.003187, 0.09246, 22.147676, 19.635689)">
+        <tspan x="-4.778" y="195.526">src="/assets/svg/computer.svg"</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+        <tspan> width={400}</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+        <tspan> height={400}</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+        <tspan> alt="Computer SVG"</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+        <tspan> className="ml-10"</tspan>
+      </text>
+      <text
+        style="fill: rgb(54, 231, 235); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+        transform="matrix(0.049502, 0.000864, -0.001533, 0.092504, 19.970148, 24.838058)" x="-4.778"
+        y="195.526">&lt;Image</text>
+      <text
+        style="fill: rgb(62, 95, 232); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.756px 186.453px;"
+        transform="matrix(0.049479, 0.001729, -0.003151, 0.092462, 16.207359, 29.66127)" x="-4.778"
+        y="195.526">&lt;/div&gt;<tspan x="-4.7779998779296875" dy="1em">​</tspan></text>
+      <text
+        style="fill: rgb(153, 62, 157); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 185.642px 186.67px;"
+        x="-4.778" y="195.526" transform="matrix(0.04949, 0.001401, -0.002539, 0.092481, 16.021267, 33.29147)">export
+        default</text>
+    </g>
+    <path style="fill: rgb(204, 10, 10); stroke: rgb(193, 193, 193); pointer-events: none;"
+      d="M 202.149 218.506 L 202.085 220.977">
+      <title>Cursor</title>
+      <animate attributeName="visibility" values="visible;hidden" dur="0.8s" fill="freeze" repeatCount="indefinite"
+        calcMode="discrete" keyTimes="0; 0.5" />
+    </path>
+    <g style="pointer-events: none;">
+      <title>Bash</title>
+      <path style="stroke: rgb(51, 51, 51); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(5, 5, 5);"
+        d="M 188.354 227.343 L 188.283 250.617 L 348.454 262.466 L 348.318 237.029 L 188.354 227.343 Z">
+        <title>bash</title>
+      </path>
+      <text
+        style="fill: rgb(213, 213, 213); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 184.338px 185.375px;"
+        transform="matrix(0.039347, 0.001933, -0.003494, 0.072409, 16.006678, 46.883423)" x="-4.778" y="195.526">&gt;
+        npm run dev<tspan x="-4.7779998779296875" dy="1em">​</tspan> Executing script run dev...<tspan
+          x="-4.7779998779296875" dy="1em">​</tspan>
+        <tspan x="-4.7779998779296875" dy="1em">​</tspan> Compilation completed....<tspan x="-4.7779998779296875"
+          dy="1em">​</tspan>
+        <tspan x="-4.7779998779296875" dy="1em">​</tspan>Server Ready... <tspan x="-4.7779998779296875" dy="1em">​
+        </tspan>
+        <tspan x="-4.7779998779296875" dy="1em">​</tspan>
+      </text>
+      <text
+        style="fill: rgb(116, 255, 131); font-family: Arial, sans-serif; font-size: 28px; white-space: pre; transform-origin: 184.338px 185.375px;"
+        transform="matrix(0.039347, 0.001933, -0.003494, 0.072409, 15.322137, 60.994553)">
+        <tspan x="-4.778" y="195.526">✓ Server at ...</tspan>
+        <tspan x="-4.778" dy="1em">​</tspan>
+      </text>
+    </g>
+    <animateTransform type="translate" additive="sum" attributeName="transform" values="0 0; 0 5; 0 0" dur="4s"
+      fill="freeze" keyTimes="0; 0.5; 1" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
+      repeatCount="indefinite" />
+  </g>
+</svg>
