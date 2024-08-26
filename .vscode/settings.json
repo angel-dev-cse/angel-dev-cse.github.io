@@ -1,0 +1,19 @@
+{
+  "restoreTerminals.terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "Git"
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "server",
+          "commands": ["pnpm run dev"]
+        }
+      ]
+    }
+  ]
+}
