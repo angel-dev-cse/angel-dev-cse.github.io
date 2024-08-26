@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col p-5">
+    <div id="hero" className="flex flex-col p-5">
       <div className="flex items-center justify-center sm:items-start sm:justify-start">
         <Image
           src="/assets/images/white.png"
@@ -31,24 +31,29 @@ export default function Hero() {
           className="absolute inline-flex"
         />
       </div>
-      <div className="mt-20">
+      <div className="mt-5 sm:mt-32">
         <div className="mb-3">
           <span className="text-md text-white-200 mr-3">Full Stack</span>
           <span className="text-5xl font-bold text-white-100">Developer</span>
         </div>
 
         <div className="mb-3">
-          <span className="text-5xl font-bold text-white-100">
-            Freelancer
-          </span>
+          <span className="text-5xl font-bold text-white-100">Freelancer</span>
         </div>
 
         <div>
-          <span className="text-5xl font-bold text-white-100 mr-3">
-            AI
-          </span>
+          <span className="text-5xl font-bold text-white-100 mr-3">AI</span>
           <span className="text-md text-white-200">Enthusiast</span>
         </div>
+      </div>
+      <div className="flex justify-end mt-[-5em] sm:mt-[-10em]">
+        <Image
+          src="/assets/images/avatar.png"
+          width={200}
+          height={500}
+          alt="White Image"
+          className="ml-10"
+        />
       </div>
     </div>
   );
