@@ -33,12 +33,12 @@ export default function Hero() {
       await hiControls.start({
         opacity: 1,
         scale: 1,
-        transition: { duration: 0.5, type: "tween", stiffness: 500 },
+        transition: { duration: 1, type: "tween", stiffness: 500 },
       });
 
       await nameControls.start({
         opacity: 1,
-        transition: { duration: 0.5, type: "just", stiffness: 500 },
+        transition: { duration: 1, type: "just", stiffness: 500 },
       });
 
       while (true) {
