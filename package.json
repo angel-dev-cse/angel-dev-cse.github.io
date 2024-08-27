@@ -8,10 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "next build && gh-pages -d out",
-    "bd" : "npm run build && npm run deploy"
+    "bd": "npm run build && npm run deploy"
   },
   "homepage": "https://angel-dev-cse.github.io",
   "dependencies": {
+    "framer-motion": "^11.3.30",
     "next": "14.2.6",
     "react": "^18",
     "react-dom": "^18"
@@ -23,6 +24,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.6",
     "gh-pages": "^6.1.1",
+    "mini-css-extract-plugin": "^2.9.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
