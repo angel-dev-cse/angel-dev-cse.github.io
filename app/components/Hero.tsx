@@ -11,6 +11,7 @@ export default function Hero() {
   const taglineControls = useAnimation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
+  const name = "A ngel Sharma";
 
   const taglines = [
     {
@@ -35,20 +36,26 @@ export default function Hero() {
       await hiControls.start({
         opacity: 1,
         scale: 1,
-        transition: { duration: 1, type: "tween", stiffness: 500 },
+        transition: { duration: 0.5, type: "tween", stiffness: 500 },
       });
 
       await nameControls.start({
         opacity: 1,
-        transition: { duration: 0.5, type: "just", stiffness: 500 },
+        transition: { duration: 0.2, type: "just", stiffness: 500 },
       });
 
-      startTyping("  Angel Sharma");
-
-      await delay(1500);
+      let index = 0;
+      const interval = setInterval(() => {
+        if (index < name.length-1) {
+          setTypedText((prev) => prev + name[index]);
+          index++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 100);
 
       while (true) {
-        for (let i = 0; i < taglines.length; i++) {
+        for (let i = 0; i < taglines.length-1; i++) {
           setCurrentIndex(i);
 
           await taglineControls.start({
@@ -72,21 +79,6 @@ export default function Hero() {
 
     sequence();
   }, [hiControls, nameControls, taglineControls]);
-
-  const delay = (ms: number) =>
-    new Promise((resolve) => setTimeout(resolve, ms));
-
-  const startTyping = (text: string) => {
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < text.length - 1) {
-        setTypedText((prev) => prev + text[index]);
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 100);
-  };
 
   return (
     <div id="hero" className="flex flex-col px-5 py-0 relative">
