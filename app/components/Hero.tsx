@@ -10,6 +10,8 @@ export default function Hero() {
   const nameControls = useAnimation();
   const taglineControls = useAnimation();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [typedText, setTypedText] = useState("");
+
   const taglines = [
     {
       title: "Full Stack Developer",
@@ -41,6 +43,10 @@ export default function Hero() {
         transition: { duration: 0.5, type: "just", stiffness: 500 },
       });
 
+      startTyping("  Angel Sharma");
+
+      await delay(1500);
+
       while (true) {
         for (let i = 0; i < taglines.length; i++) {
           setCurrentIndex(i);
@@ -66,6 +72,21 @@ export default function Hero() {
 
     sequence();
   }, [hiControls, nameControls, taglineControls]);
+
+  const delay = (ms: number) =>
+    new Promise((resolve) => setTimeout(resolve, ms));
+
+  const startTyping = (text: string) => {
+    let index = 0;
+    const interval = setInterval(() => {
+      if (index < text.length - 1) {
+        setTypedText((prev) => prev + text[index]);
+        index++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 100);
+  };
 
   return (
     <div id="hero" className="flex flex-col px-5 py-0 relative">
@@ -96,20 +117,22 @@ export default function Hero() {
         className="mt-5"
       >
         <span className="text-sm text-white-200 mt-5">I am</span>
-
-        <div className="align-middle">
-          <span className="relative text-2xl mr-2">Angel Sharma</span>
-          <Image
-            src="/assets/images/terminal.gif"
-            height={25}
-            width={25}
-            alt="White Image"
-            className="absolute inline-flex"
-          />
-        </div>
       </motion.div>
 
-      <div className="mt-16 sm:mt-25">
+      <div className="align-middle">
+        <span className="relative text-2xl mr-2">
+          {typedText}
+          <Image
+            src="/assets/gif/bar.gif"
+            height={15}
+            width={13}
+            alt="White Image"
+            className="absolute inline-flex align-baseline mt-6 ml-[0.1em]"
+          />
+        </span>
+      </div>
+
+      <div className="mt-16 mb-0 sm:mt-36 sm:mb-48">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={taglineControls}
@@ -125,26 +148,7 @@ export default function Hero() {
           <div className="max-w-[30em] text-balance text-white-100 mt-5">
             {taglines[currentIndex].description}
           </div>
-
-          {/* 
-        <div className="mb-3">
-          <span className="text-4xl text-white-100 mr-3">AI Enthusiast</span>
-          <span className="text-md text-white-200"></span>
-        </div> */}
-
-          {/* <div>
-          <span className="text-4xl text-white-100">Freelancer</span>
-        </div> */}
         </motion.div>
-      </div>
-      <div className="hidden flex justify-end mt-[-6em] sm:mt-[-16em]">
-        <Image
-          src="/assets/images/avatar.png"
-          width={200}
-          height={500}
-          alt="White Image"
-          className="ml-10 opacity-5"
-        />
       </div>
 
       <div className="md:absolute top-5 md:left-[40em] w-full h-full pointer-events-none justify-center">

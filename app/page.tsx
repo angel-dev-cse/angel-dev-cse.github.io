@@ -10,7 +10,7 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
         backgroundPositionY: "top",
         minHeight: "100%",
-        height: "90vh",
+        height: "100vh",
       }}
     >
       <div className="max-w-full w-full">
