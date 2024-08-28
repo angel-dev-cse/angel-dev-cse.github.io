@@ -9,7 +9,6 @@ export default function Home() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPositionY: "top",
-        backgroundAttachment: "fixed",
         minHeight: "100%",
         height: "90vh",
       }}

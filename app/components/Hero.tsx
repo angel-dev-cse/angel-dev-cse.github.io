@@ -38,7 +38,7 @@ export default function Hero() {
 
       await nameControls.start({
         opacity: 1,
-        transition: { duration: 1, type: "just", stiffness: 500 },
+        transition: { duration: 0.5, type: "just", stiffness: 500 },
       });
 
       while (true) {
