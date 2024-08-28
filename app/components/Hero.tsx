@@ -45,7 +45,7 @@ export default function Hero() {
 
       let index = 0;
       const interval = setInterval(() => {
-        if (index < name.length-1) {
+        if (index < name.length - 1) {
           setTypedText((prev) => prev + name[index]);
           index++;
         } else {
@@ -54,7 +54,7 @@ export default function Hero() {
       }, 100);
 
       while (true) {
-        for (let i = 0; i < taglines.length-1; i++) {
+        for (let i = 0; i < taglines.length - 1; i++) {
           setCurrentIndex(i);
 
           await taglineControls.start({
@@ -87,7 +87,7 @@ export default function Hero() {
           animate={hiControls}
           className="relative"
         >
-          <Image
+          {/* <Image
             src="/assets/images/white.png"
             height={60}
             width={60}
@@ -98,7 +98,15 @@ export default function Hero() {
             className={`${poppinsBold.className} absolute text-center text-4xl text-black-100 ml-0 mt-0 sm:ml-1 sm:mt-[-1.3em]`}
           >
             Hi!
-          </h1>
+          </h1> */}
+          <div
+            className="rounded-full overflow-hidden bg-white-100 flex items-center justify-center"
+            style={{ height: "4em", width: "4em" }}
+          >
+            <h1 className={`${poppinsBold.className} text-4xl text-black-100`}>
+              Hi!
+            </h1>
+          </div>
         </motion.div>
       </div>
 
