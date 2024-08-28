@@ -28,7 +28,6 @@ export default function Hero() {
       title: "Freelancer",
       description: "Providing freelance services to help businesses grow.",
     },
-    // Add more text and description pairs here
   ];
 
   useEffect(() => {
