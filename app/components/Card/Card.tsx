@@ -20,7 +20,7 @@ export default function Cardx({
   useEffect(() => {
     if (inView) {
       controls.start({
-        opacity: 0.7,
+        opacity: 1,
         rotateX: 0,
         transition: { duration: 0.7 },
       });
@@ -37,20 +37,19 @@ export default function Cardx({
     <div id="card" ref={ref} className="cursor-pointer m-6">
       <motion.div
         initial={{
-          opacity: 0.7,
-          width: "18rem",
+          opacity: 0.1,
+          width: "15rem",
           rotateX: 89,
-          boxShadow: "0px 0px 5px 5px rgba(7, 7, 7, 1)",
+          boxShadow: "0px 0px 1px 2px rgba(7, 7, 7, 1)",
         }}
         animate={controls}
         whileHover={{
-          opacity: 1,
-          width: "20rem",
-          boxShadow: "0px 0px 25px 10px rgba(50, 50, 50, 1)",
+          width: "17rem",
+          boxShadow: "0px 0px 10px 5px rgba(50, 50, 50, 1)",
         }}
         style={{ transformStyle: "preserve-3d", borderRadius: "0.5rem"}}
       >
-        <div className="flex justify-between rounded-lg">
+        <div className="flex justify-between rounded-lg bg-black-100">
           <div className="flex flex-col mx-auto rounded-lg overflow-hidden">
             <img
               className="rounded-lg rounded-b-none"
@@ -80,7 +79,7 @@ export default function Cardx({
             <p className="text-blue-500 font-semibold text-xs">6 Mins</p>
           </span>
         </div> */}
-            <div className="w-72 h-40">
+            <div className="w-60 h-40">
               <div className="py-2 px-4">
                 <h1 className="text-xl text-left leading-6 tracking-wide text-white-100">
                   {title}

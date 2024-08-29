@@ -64,6 +64,7 @@ export default function Home() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPositionY: "top",
+        backgroundAttachment: "fixed"
       }}
     >
       <motion.div
