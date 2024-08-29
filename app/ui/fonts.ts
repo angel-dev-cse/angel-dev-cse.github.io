@@ -9,3 +9,8 @@ export const poppinsBold = Poppins({
   weight: '700',
   subsets: ['latin'], 
 });
+
+export const poppinsExtraBold = Poppins({
+  weight: '900',
+  subsets: ['latin'], 
+});
