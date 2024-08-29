@@ -114,7 +114,7 @@ export default function Hero() {
         </motion.div>
 
         <div className="align-middle">
-          <span className="relative text-2xl mr-2">
+          <span className="relative text-2xl mr-2 text-white">
             {typedText}
             <Image
               src="/assets/gif/bar.gif"
