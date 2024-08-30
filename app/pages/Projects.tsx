@@ -31,7 +31,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="flex flex-col text-white-100 h-screen mt-10">
-      <div className={`${poppinsExtraBold.className} text-4xl`}>Projects</div>
+      <div className={`${poppinsExtraBold.className} text-4xl mt-20`}>Projects</div>
       <div className="flex flex-row justify-center items-center text-center">
         {projects.map((project) => (
           <Card
