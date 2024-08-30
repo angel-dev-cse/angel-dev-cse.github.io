@@ -82,9 +82,9 @@ export default function Hero() {
   return (
     <div id="hero" className="flex flex-col relative sm:h-screen">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
       >
         <div className="flex items-center justify-center sm:items-start sm:justify-start mt-20">
           <motion.div
@@ -148,15 +148,17 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <div className="md:absolute top-36 md:left-[40em] w-full h-full pointer-events-none justify-center">
-          <Image
-            src="/assets/svg/computer.svg"
-            width={1}
-            height={1}
-            alt="Computer SVG"
-            className="w-64 h-56 sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem]"
-          />
-        </div>
+          <div className="absolute top-32 right-0 justify-center">
+            <motion.img
+              src="/assets/svg/computer.svg"
+              width={1}
+              height={1}
+              alt="Computer SVG"
+              className="w-64 h-56 sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem]"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            />
+          </div>
       </motion.div>
     </div>
   );

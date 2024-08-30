@@ -26,29 +26,23 @@ export default function Projects() {
         "An Android app where users can listen to music, create playlists, and share them with friends. Users can also follow their favorite artists and get notified when they release new music.",
       category: "Android",
       image: "/assets/images/melodious.png",
-    }
+    },
   ];
 
   return (
     <div id="projects" className="flex flex-col text-white-100 h-screen mt-10">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className={`${poppinsExtraBold.className} text-4xl`}>Projects</div>
-        <div className="flex flex-row justify-center items-center text-center">
-          {projects.map((project) => (
-            <Card
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              category={project.category}
-              image={project.image || ""}
-            />
-          ))}
-        </div>
-      </motion.div>
+      <div className={`${poppinsExtraBold.className} text-4xl`}>Projects</div>
+      <div className="flex flex-row justify-center items-center text-center">
+        {projects.map((project) => (
+          <Card
+            key={project.title}
+            title={project.title}
+            description={project.description}
+            category={project.category}
+            image={project.image || ""}
+          />
+        ))}
+      </div>
     </div>
   );
 }

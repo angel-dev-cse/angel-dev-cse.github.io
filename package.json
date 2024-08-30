@@ -12,6 +12,7 @@
   },
   "homepage": "https://angel-dev-cse.github.io",
   "dependencies": {
+    "@studio-freight/react-lenis": "^0.0.47",
     "framer-motion": "^11.3.30",
     "next": "14.2.6",
     "react": "^18",
