@@ -46,15 +46,15 @@ body {
 .card-shadow::before {
   content: '';
   position: absolute;
-  bottom: -4rem; /* Adjust the distance of the shadow from the card */
+  bottom: -2.5rem; /* Adjust the distance of the shadow from the card */
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  height: 20px; /* Adjust the height of the shadow */
-  background: rgba(33, 33, 33, 0.8); /* Adjust the color and opacity of the shadow */
-  filter: blur(15px); /* Adjust the blur to make the shadow softer */
+  width: 10px;
+  height: 10px; /* Adjust the height of the shadow */
+  background: rgba(255, 255, 255, 0.9); /* Adjust the color and opacity of the shadow */
+  filter: blur(0px); /* Adjust the blur to make the shadow softer */
   z-index: -1; /* Ensure the shadow is behind the card */
-  border-radius: 50%; /* Make the shadow rounded */
+  border-radius: 100%; /* Make the shadow rounded */
   transition: all 0.3s ease-in-out;
 }
 
