@@ -120,7 +120,7 @@ export default function Projects() {
       if (event.shiftKey) {
         event.preventDefault();
         event.stopPropagation(); // Stop the event from propagating to parent elements
-        const scrollSpeed = 3; // Adjust this value to increase or decrease the scroll speed
+        const scrollSpeed = 5; // Adjust this value to increase or decrease the scroll speed
         container.scrollLeft += event.deltaY * scrollSpeed;
       }
     };
