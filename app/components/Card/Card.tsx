@@ -50,16 +50,17 @@ export default function Cardx({
       <motion.div
         initial={{
           opacity: 0.1,
-          width: "15rem",
+          width: "18rem",
           rotateX: 89,
-          boxShadow: "0px 0px 1px 3px rgba(7, 7, 7, 1)",
+          boxShadow: "0px 0px 1px 1px rgba(15, 15, 15, 0.7)",
         }}
         animate={controls}
         whileHover={{
-          width: "17rem",
+          width: "20rem",
           boxShadow: "0px 0px 10px 5px rgba(50, 50, 50, 1)",
         }}
         style={{ transformStyle: "preserve-3d", borderRadius: "0.5rem" }}
+        className="card-shadow"
       >
         <div className="flex justify-between rounded-lg bg-black-100">
           <div className="flex flex-col mx-auto rounded-lg overflow-hidden">
@@ -82,14 +83,14 @@ export default function Cardx({
               </motion.span>
             </div>
 
-            <div className="w-60 h-40 bg-black-100">
+            <div className="w-72 h-48 ">
               <div className="py-2 px-4">
                 <h1 className="text-xl text-left leading-6 tracking-wide text-white-100">
                   {title}
                 </h1>
               </div>
               <div className="px-4">
-                <p className="text-gray-400 text-sm text-left tracking-wide overflow-hidden line-clamp-4">
+                <p className="text-gray-400 text-sm text-left tracking-wide overflow-hidden line-clamp-6">
                   {description}
                 </p>
               </div>

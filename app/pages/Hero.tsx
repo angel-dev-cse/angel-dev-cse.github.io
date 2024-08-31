@@ -154,7 +154,7 @@ export default function Hero() {
               width={1}
               height={1}
               alt="Computer SVG"
-              className="w-64 h-56 sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem]"
+              className="w-64 h-56 sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem] z-10"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             />

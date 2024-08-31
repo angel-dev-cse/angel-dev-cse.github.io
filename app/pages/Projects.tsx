@@ -2,7 +2,6 @@
 
 import Card from "@/app/components/Card/Card";
 import { poppinsExtraBold } from "../ui/fonts";
-import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
