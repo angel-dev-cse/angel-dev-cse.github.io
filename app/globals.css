@@ -33,34 +33,90 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+  }
+
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+    background: transparent;
+    -webkit-border-radius: 1ex;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.376);
+    -webkit-border-radius: 5ex;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  #card-container::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+    background: transparent;
+    -webkit-border-radius: 1ex;
+  }
+
+  #card-container::-webkit-scrollbar-thumb {
+    background: rgba(60, 60, 60, 0.116);
+    -webkit-border-radius: 5ex;
+    width: 10px;
+  }
+
+  #card-container:hover::-webkit-scrollbar-thumb {
+    background: rgba(218, 218, 218, 0.25);
+    -webkit-border-radius: 5ex;
+    width: 10px;
+  }
+
+  
+
+  #card-container::-webkit-scrollbar-corner {
+    background: transparent;
   }
 
   .card-shadow {
-  position: relative;
-  border-radius: 0.5rem;
-}
+    position: relative;
+    border-radius: 0.5rem;
+  }
 
-.card-shadow::before {
-  content: '';
-  position: absolute;
-  bottom: -2.5rem; /* Adjust the distance of the shadow from the card */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 10px; /* Adjust the height of the shadow */
-  background: rgba(255, 255, 255, 0.9); /* Adjust the color and opacity of the shadow */
-  filter: blur(0px); /* Adjust the blur to make the shadow softer */
-  z-index: -1; /* Ensure the shadow is behind the card */
-  border-radius: 100%; /* Make the shadow rounded */
-  transition: all 0.3s ease-in-out;
-}
+  .card-shadow::before {
+    content: "";
+    position: absolute;
+    bottom: -2.5rem; /* Adjust the distance of the shadow from the card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px; /* Adjust the height of the shadow */
+    background: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Adjust the color and opacity of the shadow */
+    filter: blur(0px); /* Adjust the blur to make the shadow softer */
+    z-index: -1; /* Ensure the shadow is behind the card */
+    border-radius: 100%; /* Make the shadow rounded */
+    transition: all 0.3s ease-in-out;
+  }
 
-.card-shadow:hover::before {
-  bottom: 0px; /* Adjust the distance of the shadow on hover */
-  filter: blur(15px); /* Adjust the blur on hover */
-  background: rgba(66, 66, 66, 0); /* Adjust the color and opacity on hover */
-}
+  .card-shadow:hover::before {
+    bottom: 0px; /* Adjust the distance of the shadow on hover */
+    filter: blur(15px); /* Adjust the blur on hover */
+    background: rgba(66, 66, 66, 0); /* Adjust the color and opacity on hover */
+  }
+
+  /* Ensure the container has horizontal scrolling and snapping enabled */
+  .overflow-x-scroll {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  /* Ensure each card snaps to the center */
+  .snap-center {
+    scroll-snap-align: center;
+  }
 }

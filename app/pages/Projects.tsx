@@ -1,45 +1,158 @@
 "use client";
 
 import Card from "@/app/components/Card/Card";
-import { poppinsExtraBold } from "../ui/fonts";
+import { poppinsBold, poppinsExtraBold } from "../ui/fonts";
+import React, { useRef, useEffect } from "react";
+
+const projects = [
+  {
+    title: "E-commerce Website",
+    description:
+      "A project that experiments with MENN stack to display an online shop. With separate stack for admin dashboard, user dashboard. Buy, sell and manage payment along with blogging system.",
+    category: "Web",
+    image: "/assets/images/ecommerce.png",
+    stack_icons: ["mongodb.png", "expressjs.webp", "nodejs.png", "nextjs.png"],
+  },
+  {
+    title: "Smart Assignment Manager",
+    description:
+      "A complete solution for student's assignment submission and teacher's evaluation coupled with full institution managment. Teacher and students can communiate easily through messaging and arranging events and schedules.",
+    category: "Web",
+    image: "/assets/images/assignment_manager.png",
+    stack_icons: ["laravel.png", "php.png", "js.png", "mysql.png"],
+  },
+  {
+    title: "Melodious",
+    description:
+      "An Android app where users can listen to music, create playlists, and share them with friends. Users can also follow their favorite artists and get notified when they release new music.",
+    category: "Android",
+    image: "/assets/images/melodious.png",
+    stack_icons: ["android.png", "java.png"],
+  },
+  {
+    title: "E-commerce Websitea",
+    description:
+      "A project that experiments with MENN stack to display an online shop. With separate stack for admin dashboard, user dashboard. Buy, sell and manage payment along with blogging system.",
+    category: "Web",
+    image: "/assets/images/ecommerce.png",
+    stack_icons: ["mongodb.png", "expressjs.webp", "nodejs.png", "nextjs.png"],
+  },
+  {
+    title: "Smart Assignment Managera",
+    description:
+      "A complete solution for student's assignment submission and teacher's evaluation coupled with full institution managment. Teacher and students can communiate easily through messaging and arranging events and schedules.",
+    category: "Web",
+    image: "/assets/images/assignment_manager.png",
+    stack_icons: ["laravel.png", "php.png", "js.png", "mysql.png"],
+  },
+  {
+    title: "Melodiousa",
+    description:
+      "An Android app where users can listen to music, create playlists, and share them with friends. Users can also follow their favorite artists and get notified when they release new music.",
+    category: "Android",
+    image: "/assets/images/melodious.png",
+    stack_icons: ["android.png", "java.png"],
+  },
+  {
+    title: "E-commerce Websiteb",
+    description:
+      "A project that experiments with MENN stack to display an online shop. With separate stack for admin dashboard, user dashboard. Buy, sell and manage payment along with blogging system.",
+    category: "Web",
+    image: "/assets/images/ecommerce.png",
+    stack_icons: ["mongodb.png", "expressjs.webp", "nodejs.png", "nextjs.png"],
+  },
+  {
+    title: "Smart Assignment Managerb",
+    description:
+      "A complete solution for student's assignment submission and teacher's evaluation coupled with full institution managment. Teacher and students can communiate easily through messaging and arranging events and schedules.",
+    category: "Web",
+    image: "/assets/images/assignment_manager.png",
+    stack_icons: ["laravel.png", "php.png", "js.png", "mysql.png"],
+  },
+  {
+    title: "Melodiousb",
+    description:
+      "An Android app where users can listen to music, create playlists, and share them with friends. Users can also follow their favorite artists and get notified when they release new music.",
+    category: "Android",
+    image: "/assets/images/melodious.png",
+    stack_icons: ["android.png", "java.png"],
+  },
+];
 
 export default function Projects() {
-  const projects = [
-    {
-      title: "E-commerce Website",
-      description:
-        "A project that experiments with MENN stack to display an online shop. With separate stack for admin dashboard, user dashboard. Buy, sell and manage payment along with blogging system.",
-      category: "Web",
-      image: "/assets/images/ecommerce.png",
-    },
-    {
-      title: "Smart Assignment Manager",
-      description:
-        "A complete solution for student's assignment submission and teacher's evaluation coupled with full institution managment. Teacher and students can communiate easily through messaging and arranging events and schedules.",
-      category: "Web",
-      image: "/assets/images/assignment_manager.png",
-    },
-    {
-      title: "Melodious",
-      description:
-        "An Android app where users can listen to music, create playlists, and share them with friends. Users can also follow their favorite artists and get notified when they release new music.",
-      category: "Android",
-      image: "/assets/images/melodious.png",
-    },
-  ];
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const isDragging = useRef<boolean>(false);
+  const startX = useRef<number>(0);
+  const scrollLeft = useRef<number>(0);
+
+  const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (!containerRef.current) return;
+    isDragging.current = true;
+    startX.current = event.pageX - containerRef.current.offsetLeft;
+    scrollLeft.current = containerRef.current.scrollLeft;
+  };
+
+  const handleMouseUp = () => {
+    isDragging.current = false;
+  };
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDragging.current || !containerRef.current) return;
+    if (!isDragging.current) return;
+    event.preventDefault();
+    const x = event.pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1; // Scroll-fast
+    containerRef.current.scrollLeft = scrollLeft.current - walk;
+  };
+
+  const handleWheel = (event: WheelEvent) => {
+    if (event.shiftKey && containerRef.current) {
+      event.preventDefault();
+      containerRef.current.scrollLeft += event.deltaY;
+    }
+  };
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    
+    const handleWheelEvent = (event:WheelEvent) => {
+      if (event.shiftKey) {
+        event.preventDefault();
+        event.stopPropagation(); // Stop the event from propagating to parent elements
+        const scrollSpeed = 3; // Adjust this value to increase or decrease the scroll speed
+        container.scrollLeft += event.deltaY * scrollSpeed;
+      }
+    };
+    container.addEventListener("wheel", handleWheelEvent, { passive: false });
+    return () => {
+      container.removeEventListener("wheel", handleWheelEvent);
+    };
+  }, []);
 
   return (
     <div id="projects" className="flex flex-col text-white-100 h-screen mt-10">
-      <div className={`${poppinsExtraBold.className} text-4xl mt-20`}>Projects</div>
-      <div className="flex flex-row justify-center items-center text-center">
+      <h1 className={`${poppinsExtraBold} font-bold text-4xl mt-20`}>Projects</h1>
+      <div
+        id="card-container"
+        ref={containerRef}
+        className="flex overflow-x-scroll overflow-y-hidden w-full pb-10"
+        style={{ scrollBehavior: "smooth" }}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+        onMouseMove={handleMouseMove}
+      >
         {projects.map((project) => (
-          <Card
-            key={project.title}
-            title={project.title}
-            description={project.description}
-            category={project.category}
-            image={project.image || ""}
-          />
+          <div key={project.title} className="flex-shrink-0">
+            <Card
+              title={project.title}
+              description={project.description}
+              category={project.category}
+              image={project.image || ""}
+              stack_icons={project.stack_icons}
+            />
+          </div>
         ))}
       </div>
     </div>
