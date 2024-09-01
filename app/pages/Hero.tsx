@@ -139,7 +139,7 @@ export default function Hero() {
             />
           </div>
 
-        <div className="mb-10 m:mt-36 sm:mb-48">
+        <div className="mb-10 sm:mt-36 sm:mb-48">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={taglineControls}
