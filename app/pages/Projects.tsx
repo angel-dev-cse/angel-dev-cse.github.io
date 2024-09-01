@@ -131,12 +131,12 @@ export default function Projects() {
   }, []);
 
   return (
-    <div id="projects" className="flex flex-col text-white-100 h-screen mt-10">
+    <div id="projects" className="flex flex-col text-white-100 h-auto sm:h-screen mt-10">
       <h1 className={`${poppinsExtraBold.className} text-4xl mt-20`}>Projects</h1>
       <div
         id="card-container"
         ref={containerRef}
-        className="flex overflow-x-scroll overflow-y-hidden w-full pb-10"
+        className="flex overflow-scroll sm:overflow-x-scroll sm:overflow-y-hidden w-full p-10"
         style={{ scrollBehavior: "smooth" }}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}

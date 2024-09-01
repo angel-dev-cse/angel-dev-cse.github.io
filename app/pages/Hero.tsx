@@ -80,13 +80,13 @@ export default function Hero() {
   }, [hiControls, nameControls, taglineControls, taglines.length]);
 
   return (
-    <div id="hero" className="flex flex-col relative h-screen overflow-y-hidden sm:overflow-y-auto">
+    <div id="hero" className="flex flex-col relative h-auto sm:h-screen">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
       >
-        <div className="flex items-center justify-center sm:items-start sm:justify-start mt-20">
+        <div className="flex items-center justify-center sm:items-start sm:justify-start mt-5 sm:mt-20">
           <motion.div
             initial={{ opacity: 0, scale: 0.1 }}
             animate={hiControls}
@@ -127,7 +127,19 @@ export default function Hero() {
           </span>
         </div>
 
-        <div className="mt-96 mb-0 sm:mt-36 sm:mb-48">
+        <div className="relative sm:absolute flex w-full items-center justify-center sm:items-end sm:justify-end sm:top-32 sm:right-0 overflow-hidden">
+            <motion.img
+              src="/assets/svg/computer.svg"
+              width={1}
+              height={1}
+              alt="Computer SVG"
+              className="w-64 h-auto sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem] z-10"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            />
+          </div>
+
+        <div className="mb-10 m:mt-36 sm:mb-48">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={taglineControls}
@@ -136,29 +148,17 @@ export default function Hero() {
             <div className="mb-3">
               {/* <span className="text-md text-white-200 mr-3">Full Stack</span> */}
               <span
-                className={`${poppinsBold.className} text-5xl font-extrabold text-white-100`}
+                className={`${poppinsBold.className} text-3xl sm:text-5xl font-extrabold text-white-100`}
               >
                 {taglines[currentIndex].title}
               </span>
             </div>
 
-            <div className="max-w-[30em] text-balance text-white-100 mt-5">
+            <div className="max-w-[30em] text-balance text-white-100 text-sm sm:text-base sm:mt-5">
               {taglines[currentIndex].description}
             </div>
           </motion.div>
         </div>
-
-          <div className="flex absolute w-full items-center justify-center sm:items-end sm:justify-end top-64 sm:top-32 sm:right-0">
-            <motion.img
-              src="/assets/svg/computer.svg"
-              width={1}
-              height={1}
-              alt="Computer SVG"
-              className="w-fit h-80 sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem] z-10"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.3 }}
-            />
-          </div>
       </motion.div>
     </div>
   );
