@@ -136,7 +136,7 @@ export default function Projects() {
       <div
         id="card-container"
         ref={containerRef}
-        className="flex overflow-scroll sm:overflow-x-scroll sm:overflow-y-hidden w-full p-10"
+        className="flex overflow-scroll sm:overflow-x-scroll sm:overflow-y-hidden w-full py-10"
         style={{ scrollBehavior: "smooth" }}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}

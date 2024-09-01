@@ -148,13 +148,13 @@ export default function Cardx({
               </motion.span>
             </div>
 
-            <div className="w-48 h-52 sm:w-72 sm:h-48">
+            <div className="w-72 h-52 sm:w-72 sm:h-48">
               <div className="py-2 px-4">
                 <h1 className="text-xl text-left font-bold leading-6 tracking-wide text-white-100">
                   {title}
                 </h1>
               </div>
-              <div className="px-4">
+              <div className="ml-4 sm:mx-4">
                 <p className="text-gray-400 text-sm text-left tracking-wide overflow-hidden line-clamp-6 ">
                   {description}
                 </p>
