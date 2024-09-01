@@ -33,6 +33,15 @@ const projects = [
     github: "https://github.com/BLOODKINGZ/MelodiousAlpha",
   },
   {
+    title: "JLNE",
+    description:
+      "An Android app where a machine supplier can manage their inventory, sales, and customer data. The app also provides a platform for customers to view and order machines.",
+    category: "Android",
+    image: "/assets/images/jlne-demo.png",
+    stack_icons: ["android.png", "java.png"],
+    github: "https://github.com/angel-dev-cse/JLNE",
+  },
+  {
     title: "E-commerce Websitea",
     description:
       "A project that experiments with MENN stack to display an online shop. With separate stack for admin dashboard, user dashboard. Buy, sell and manage payment along with blogging system.",
