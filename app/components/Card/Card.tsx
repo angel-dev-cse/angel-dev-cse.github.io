@@ -27,7 +27,7 @@ export default function Cardx({
 
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.5,
+    threshold: 0.7,
   });
 
   useEffect(() => {
@@ -114,7 +114,7 @@ export default function Cardx({
           <div className="flex flex-col mx-auto rounded-lg overflow-hidden">
             <div className="inline-flex">
               <motion.img
-                className="rounded-lg rounded-b-none object-cover w-full h-44 sm:h-44"
+                className="rounded-lg rounded-b-none object-cover w-56 h-44 sm:h-44"
                 src={image}
                 alt={title}
                 loading="lazy"
@@ -165,7 +165,7 @@ export default function Cardx({
               </motion.span>
             </div>
 
-            <div className="w-72 h-52 sm:w-72 sm:h-48">
+            <div className="w-52 h-52 sm:w-72 sm:h-48">
               <div className="py-2 px-4">
                 <h1 className="text-xl text-left font-bold leading-6 tracking-wide text-white-100">
                   {title}
