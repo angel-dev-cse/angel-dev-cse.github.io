@@ -41,60 +41,6 @@ const projects = [
     stack_icons: ["android.png", "java.png"],
     github: "https://github.com/angel-dev-cse/JLNE",
   },
-  {
-    title: "E-commerce Websitea",
-    description:
-      "A project that experiments with MENN stack to display an online shop. With separate stack for admin dashboard, user dashboard. Buy, sell and manage payment along with blogging system.",
-    category: "Web",
-    image: "/assets/images/ecommerce.png",
-    stack_icons: ["mongodb.png", "expressjs.webp", "nodejs.png", "nextjs.png"],
-    github: "https://github.com/angel-dev-cse/merncommerce",
-  },
-  {
-    title: "Smart Assignment Managera",
-    description:
-      "A complete solution for student's assignment submission and teacher's evaluation coupled with full institution managment. Teacher and students can communiate easily through messaging and arranging events and schedules.",
-    category: "Web",
-    image: "/assets/images/assignment_manager.png",
-    stack_icons: ["laravel.png", "php.png", "js.png", "mysql.png"],
-    github: "https://github.com/angel-dev-cse/smart-assignment-manager",
-  },
-  {
-    title: "Melodiousa",
-    description:
-      "An Android app where users can listen to music, create playlists, and share them with friends. Users can also follow their favorite artists and get notified when they release new music.",
-    category: "Android",
-    image: "/assets/images/melodious.png",
-    stack_icons: ["android.png", "java.png"],
-    github: "https://github.com/BLOODKINGZ/MelodiousAlpha",
-  },
-  {
-    title: "E-commerce Websiteb",
-    description:
-      "A project that experiments with MENN stack to display an online shop. With separate stack for admin dashboard, user dashboard. Buy, sell and manage payment along with blogging system.",
-    category: "Web",
-    image: "/assets/images/ecommerce.png",
-    stack_icons: ["mongodb.png", "expressjs.webp", "nodejs.png", "nextjs.png"],
-    github: "https://github.com/angel-dev-cse/merncommerce",
-  },
-  {
-    title: "Smart Assignment Managerb",
-    description:
-      "A complete solution for student's assignment submission and teacher's evaluation coupled with full institution managment. Teacher and students can communiate easily through messaging and arranging events and schedules.",
-    category: "Web",
-    image: "/assets/images/assignment_manager.png",
-    stack_icons: ["laravel.png", "php.png", "js.png", "mysql.png"],
-    github: "https://github.com/angel-dev-cse/smart-assignment-manager",
-  },
-  {
-    title: "Melodiousb",
-    description:
-      "An Android app where users can listen to music, create playlists, and share them with friends. Users can also follow their favorite artists and get notified when they release new music.",
-    category: "Android",
-    image: "/assets/images/melodious.png",
-    stack_icons: ["android.png", "java.png"],
-    github: "https://github.com/BLOODKINGZ/MelodiousAlpha",
-  },
 ];
 
 export default function Projects() {
