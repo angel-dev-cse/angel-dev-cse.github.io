@@ -11,12 +11,14 @@ export default function Cardx({
   category,
   image,
   stack_icons,
+  github,
 }: {
   title: string;
   description: string;
   category: string;
   image: string;
   stack_icons: string[];
+  github: string;
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -60,7 +62,7 @@ export default function Cardx({
         controls.start({
           opacity: 1,
           rotateX: 0,
-          transition: { duration: 0.5 },
+          transition: { duration: 0.1 },
         });
       } else {
         controls.start({
@@ -75,7 +77,7 @@ export default function Cardx({
   useEffect(() => {
     if (isHovered) {
       controls.start({
-        boxShadow: "0px 0px 15px 3px rgba(200, 200, 200, .8)",
+        boxShadow: "0px 0px 10px 3px rgba(200, 200, 200, .7)",
         borderWidth: 0,
       });
     } else {
@@ -91,7 +93,7 @@ export default function Cardx({
     <div
       id="card"
       ref={ref}
-      className="cursor-pointer m-2 sm:m-5 rounded-full select-none w-fit sm:w-[18rem]"
+      className="cursor-grabbing m-2 sm:m-5 rounded-full select-none w-fit sm:w-[18rem]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(true)}
@@ -102,7 +104,7 @@ export default function Cardx({
           opacity: 0.1,
           rotateX: 89,
           boxShadow: "0px 0px 0px 0px rgba(50, 50, 50, 0.5)",
-          border:"auto"
+          border: "auto",
         }}
         animate={controls}
         style={{ transformStyle: "preserve-3d", borderRadius: "0.5rem" }}
@@ -110,20 +112,29 @@ export default function Cardx({
       >
         <div className="flex justify-between rounded-lg bg-black-100">
           <div className="flex flex-col mx-auto rounded-lg overflow-hidden">
-            <motion.img
-              className="rounded-lg rounded-b-none object-cover h-44 sm:h-auto"
-              src={image}
-              alt={title}
-              loading="lazy"
-              animate={{
-                opacity: isHovered || isMobile ? 1 : 0.5,
-              }}
-            />
+            <div className="inline-flex">
+              <motion.img
+                className="rounded-lg rounded-b-none object-cover h-44 sm:h-auto"
+                src={image}
+                alt={title}
+                loading="lazy"
+                animate={{
+                  opacity: isHovered || isMobile ? 1 : 0.5,
+                  zIndex: 1,
+                }}
+              />
+            </div>
 
             <div className="flex mt-[-1.3rem] -ml-4 px-4">
               <motion.span
-                className="inline-block bg-black-100 rounded-t-md text-sm sm:font-medium tracking-wide text-white-100 px-3 pt-0.5 items-center"
-                animate={{ opacity: isHovered || isMobile ? 1 : 0.5 }}
+                className="inline-block bg-black-100 rounded-t-md text-sm sm:font-medium tracking-wide text-white-100 px-3 pt-0.5 items-center z-[2]"
+                animate={{
+                  opacity: isHovered || isMobile ? 1 : 0.1,
+                  boxShadow:
+                    isHovered || isMobile
+                      ? "0px 0px 7px 5px rgba(0,0,0,0.5)"
+                      : "0px 0px 0px 0px rgba(0,0,0,1)",
+                }}
               >
                 {category}
               </motion.span>
@@ -131,13 +142,19 @@ export default function Cardx({
 
             <div className="flex -mt-[1.6rem] sm:-mt-[1.9rem] -mr-4 px-4 justify-end ">
               <motion.span
-                className="inline-flex bg-black-100 rounded-t-md text-sm font-medium tracking-wide text-white-100 px-3 pt-0.5"
-                animate={{ opacity: isHovered || isMobile ? 1 : 0.2 }}
+                className="inline-flex bg-black-100 rounded-t-md text-sm font-medium tracking-wide text-white-100 px-3 pt-0.5 z-[2]"
+                animate={{
+                  opacity: isHovered || isMobile ? 1 : 0.1,
+                  boxShadow:
+                    isHovered || isMobile
+                      ? "0px 0px 7px 5px rgba(0,0,0,0.5)"
+                      : "0px 0px 0px 0px rgba(0,0,0,1)",
+                }}
               >
                 {stack_icons.map((icon) => (
-                  <Image
+                  <motion.img
                     key={icon}
-                    className="m-1 w-4 h-4 sm:w-5 sm:h-5"
+                    className="m-1 w-5 h-auto object-cover"
                     width={1}
                     height={1}
                     src={`/assets/icons/${icon}`}
@@ -161,45 +178,25 @@ export default function Cardx({
               </div>
             </div>
 
-            {/* <div className="flex flex-row items-end h-full w-full px-4 mt-4">
-              <div className="flex border-t border-gray-700 w-full py-4">
-                <div className="flex items-center space-x-3 border-r border-gray-700 w-full">
-                  <img
-                    className="object-cover w-8 h-8 border-2 border-white rounded-full"
-                    src="https://storageapi.fleek.co/kamaludin21-team-bucket/portfolio/avatar.jpg"
-                    alt="profile users"
-                    loading="lazy"
-                  />
-                  <div className="">
-                    <p className="text-sm font-semibold tracking-wide text-gray-200">
-                      Author
-                    </p>
-                    <p className="text-xs font-light tracking-wider text-gray-300">
-                      2 Hours ago
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center flex-shrink-0 px-2">
-                  <div className="flex items-center space-x-1 text-gray-400">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                    </svg>
-                    <p className="font-medium">10</p>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            <div className="flex items-center justify-center">
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <motion.img
+                  src={`/assets/icons/github.png`}
+                  width={45}
+                  height={1}
+                  alt="Github Icon"
+                  animate={{
+                    opacity: isHovered ? 1 : 0.1,
+                    scale: isHovered ? 1.1 : 1,
+                    translateY: isHovered ? -20 : 0,
+                    boxShadow: isHovered
+                      ? "0px 0px 7px 2px rgba(200, 200, 200, .8)"
+                      : "0px 0px 0px 0px rgba(200, 200, 200, .8)",
+                  }}
+                  className="-mb-8 opacity-50 rounded-full"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </motion.div>

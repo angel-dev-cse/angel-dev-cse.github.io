@@ -12,6 +12,7 @@ const projects = [
     category: "Web",
     image: "/assets/images/ecommerce.png",
     stack_icons: ["mongodb.png", "expressjs.webp", "nodejs.png", "nextjs.png"],
+    github: "https://github.com/angel-dev-cse/merncommerce",
   },
   {
     title: "Smart Assignment Manager",
@@ -20,6 +21,7 @@ const projects = [
     category: "Web",
     image: "/assets/images/assignment_manager.png",
     stack_icons: ["laravel.png", "php.png", "js.png", "mysql.png"],
+    github: "https://github.com/angel-dev-cse/smart-assignment-manager",
   },
   {
     title: "Melodious",
@@ -28,6 +30,7 @@ const projects = [
     category: "Android",
     image: "/assets/images/melodious.png",
     stack_icons: ["android.png", "java.png"],
+    github: "https://github.com/BLOODKINGZ/MelodiousAlpha",
   },
   {
     title: "E-commerce Websitea",
@@ -36,6 +39,7 @@ const projects = [
     category: "Web",
     image: "/assets/images/ecommerce.png",
     stack_icons: ["mongodb.png", "expressjs.webp", "nodejs.png", "nextjs.png"],
+    github: "https://github.com/angel-dev-cse/merncommerce",
   },
   {
     title: "Smart Assignment Managera",
@@ -44,6 +48,7 @@ const projects = [
     category: "Web",
     image: "/assets/images/assignment_manager.png",
     stack_icons: ["laravel.png", "php.png", "js.png", "mysql.png"],
+    github: "https://github.com/angel-dev-cse/smart-assignment-manager",
   },
   {
     title: "Melodiousa",
@@ -52,6 +57,7 @@ const projects = [
     category: "Android",
     image: "/assets/images/melodious.png",
     stack_icons: ["android.png", "java.png"],
+    github: "https://github.com/BLOODKINGZ/MelodiousAlpha",
   },
   {
     title: "E-commerce Websiteb",
@@ -60,6 +66,7 @@ const projects = [
     category: "Web",
     image: "/assets/images/ecommerce.png",
     stack_icons: ["mongodb.png", "expressjs.webp", "nodejs.png", "nextjs.png"],
+    github: "https://github.com/angel-dev-cse/merncommerce",
   },
   {
     title: "Smart Assignment Managerb",
@@ -68,6 +75,7 @@ const projects = [
     category: "Web",
     image: "/assets/images/assignment_manager.png",
     stack_icons: ["laravel.png", "php.png", "js.png", "mysql.png"],
+    github: "https://github.com/angel-dev-cse/smart-assignment-manager",
   },
   {
     title: "Melodiousb",
@@ -76,6 +84,7 @@ const projects = [
     category: "Android",
     image: "/assets/images/melodious.png",
     stack_icons: ["android.png", "java.png"],
+    github: "https://github.com/BLOODKINGZ/MelodiousAlpha",
   },
 ];
 
@@ -115,8 +124,8 @@ export default function Projects() {
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
-    
-    const handleWheelEvent = (event:WheelEvent) => {
+
+    const handleWheelEvent = (event: WheelEvent) => {
       if (event.shiftKey) {
         event.preventDefault();
         event.stopPropagation(); // Stop the event from propagating to parent elements
@@ -131,8 +140,13 @@ export default function Projects() {
   }, []);
 
   return (
-    <div id="projects" className="flex flex-col text-white-100 h-auto sm:h-screen mt-10">
-      <h1 className={`${poppinsExtraBold.className} text-4xl mt-20`}>Projects</h1>
+    <div
+      id="projects"
+      className="flex flex-col text-white-100 h-auto sm:h-screen mt-10"
+    >
+      <h1 className={`${poppinsExtraBold.className} text-4xl mt-20`}>
+        Projects
+      </h1>
       <div
         id="card-container"
         ref={containerRef}
@@ -151,6 +165,7 @@ export default function Projects() {
               category={project.category}
               image={project.image || ""}
               stack_icons={project.stack_icons}
+              github={project.github}
             />
           </div>
         ))}
