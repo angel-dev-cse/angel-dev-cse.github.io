@@ -4,7 +4,7 @@ import Projects from "@/app/pages/Projects";
 export default function Home() {
   return (
     <main
-      className="relative bg-black-100 flex flex-col justify-center items-center overflow-hidden mx-auto px-0 sm:px-20"
+      className="relative bg-black-100 flex flex-col justify-center items-center overflow-hidden mx-auto px-5 sm:px-20"
       style={{
         backgroundImage: "url('/assets/images/background.png')",
         backgroundSize: "cover",

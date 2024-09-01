@@ -80,7 +80,7 @@ export default function Hero() {
   }, [hiControls, nameControls, taglineControls, taglines.length]);
 
   return (
-    <div id="hero" className="flex flex-col relative sm:h-screen">
+    <div id="hero" className="flex flex-col relative h-screen overflow-y-hidden sm:overflow-y-auto">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -108,12 +108,12 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={nameControls}
-          className="mt-5"
+          className="sm:mt-5 items-center flex flex-col sm:flex-row sm:items-start"
         >
           <span className="text-sm text-white-200 mt-5">I am</span>
         </motion.div>
 
-        <div className="align-middle">
+        <div className="align-middle text-center sm:text-left">
           <span className="relative text-2xl mr-2 text-white">
             {typedText}
             <Image
@@ -127,7 +127,7 @@ export default function Hero() {
           </span>
         </div>
 
-        <div className="mt-16 mb-0 sm:mt-36 sm:mb-48">
+        <div className="mt-96 mb-0 sm:mt-36 sm:mb-48">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={taglineControls}
@@ -148,13 +148,13 @@ export default function Hero() {
           </motion.div>
         </div>
 
-          <div className="absolute top-32 right-0 justify-center">
+          <div className="flex absolute w-full items-center justify-center sm:items-end sm:justify-end top-64 sm:top-32 sm:right-0">
             <motion.img
               src="/assets/svg/computer.svg"
               width={1}
               height={1}
               alt="Computer SVG"
-              className="w-64 h-56 sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem] z-10"
+              className="w-fit h-80 sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem] z-10"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             />

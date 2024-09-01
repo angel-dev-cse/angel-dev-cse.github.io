@@ -132,7 +132,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="flex flex-col text-white-100 h-screen mt-10">
-      <h1 className={`${poppinsExtraBold} font-bold text-4xl mt-20`}>Projects</h1>
+      <h1 className={`${poppinsExtraBold.className} text-4xl mt-20`}>Projects</h1>
       <div
         id="card-container"
         ref={containerRef}

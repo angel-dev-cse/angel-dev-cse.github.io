@@ -46,7 +46,7 @@ export default function Cardx({
     <div
       id="card"
       ref={ref}
-      className="cursor-pointer m-5 rounded-full select-none w-[18rem]"
+      className="cursor-pointer m-2 mt-24 sm:m-5 rounded-full select-none w-[12rem] sm:w-[18rem]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -69,7 +69,7 @@ export default function Cardx({
         <div className="flex justify-between rounded-lg bg-black-100">
           <div className="flex flex-col mx-auto rounded-lg overflow-hidden">
             <motion.img
-              className="rounded-lg rounded-b-none object-cover"
+              className="rounded-lg rounded-b-none object-cover h-56 sm:h-auto"
               src={image}
               alt={title}
               loading="lazy"
@@ -80,14 +80,14 @@ export default function Cardx({
 
             <div className="flex mt-[-1.3rem] -ml-4 px-4">
               <motion.span
-                className="inline-block bg-black-100 rounded-t-md text-sm font-medium tracking-wide text-white-100 px-3 pt-0.5 items-center"
+                className="inline-block bg-black-100 rounded-t-md text-sm sm:font-medium tracking-wide text-white-100 px-3 pt-0.5 items-center"
                 animate={{ opacity: isHovered ? 1 : 0.2}}
               >
                 {category}
               </motion.span>
             </div>
 
-            <div className="flex -mt-[1.9rem] -mr-4 px-4 justify-end ">
+            <div className="flex -mt-[1.6rem] sm:-mt-[1.9rem] -mr-4 px-4 justify-end ">
               <motion.span
                 className="inline-flex bg-black-100 rounded-t-md text-sm font-medium tracking-wide text-white-100 px-3 pt-0.5"
                 animate={{ opacity: isHovered ? 1 : 0.2}}
@@ -95,9 +95,9 @@ export default function Cardx({
                 {stack_icons.map((icon) => (
                   <Image
                     key={icon}
-                    className="m-1"
-                    width={20}
-                    height={20}
+                    className="m-1 w-4 h-4 sm:w-5 sm:h-5"
+                    width={1}
+                    height={1}
                     src={`/assets/icons/${icon}`}
                     alt="stack icon"
                     loading="lazy"
@@ -106,7 +106,7 @@ export default function Cardx({
               </motion.span>
             </div>
 
-            <div className="w-72 h-48 ">
+            <div className="w-48 h-52 sm:w-72 sm:h-48">
               <div className="py-2 px-4">
                 <h1 className="text-xl text-left font-bold leading-6 tracking-wide text-white-100">
                   {title}
