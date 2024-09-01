@@ -41,6 +41,15 @@ const projects = [
     stack_icons: ["android.png", "java.png"],
     github: "https://github.com/angel-dev-cse/JLNE",
   },
+  {
+    title: "Smart Kindergarten",
+    description:
+      "An Android app where a user can interact with learning materials, take quizzes, and view their progress. The app also provides a platform for teachers to manage students and learning materials.",
+    category: "Android",
+    image: "/assets/images/skgn.png",
+    stack_icons: ["android.png", "java.png"],
+    github: "https://github.com/angel-dev-cse/SmartKinderGartenNew/tree/master",
+  },
 ];
 
 export default function Projects() {
