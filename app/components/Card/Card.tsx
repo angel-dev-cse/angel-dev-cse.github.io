@@ -93,7 +93,7 @@ export default function Cardx({
     <div
       id="card"
       ref={ref}
-      className="cursor-grabbing m-2 sm:m-5 rounded-full select-none w-fit sm:w-[18rem]"
+      className="cursor-grabbing m-2 sm:m-5 rounded-full select-none w-56 sm:w-[18rem]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(true)}

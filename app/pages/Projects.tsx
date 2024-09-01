@@ -6,6 +6,15 @@ import React, { useRef, useEffect } from "react";
 
 const projects = [
   {
+    title: "Bank Distress Prediction",
+    description:
+      "Developed a predictive model to assess the likelihood of bank distress using machine learning algorithms based on Performance Matrix and compared the result with previously established z-score method.",
+    category: "Research",
+    image: "/assets/images/bank_distress.png",
+    stack_icons: ["python.png", "jupyter.png"],
+    github: "https://github.com/angel-dev-cse/bank-distress-prediction",
+  },
+  {
     title: "E-commerce Website",
     description:
       "A project that experiments with MENN stack to display an online shop. With separate stack for admin dashboard, user dashboard. Buy, sell and manage payment along with blogging system.",
