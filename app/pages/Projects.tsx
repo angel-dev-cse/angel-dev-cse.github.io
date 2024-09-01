@@ -117,7 +117,7 @@ export default function Projects() {
       id="projects"
       className="flex flex-col text-white-100 h-auto sm:h-screen mt-10"
     >
-      <h1 className={`${poppinsExtraBold.className} text-4xl mt-20`}>
+      <h1 className={`${poppinsExtraBold.className} text-4xl mt-20 sm:mt-10`}>
         Projects
       </h1>
       <div
