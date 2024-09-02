@@ -12,6 +12,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/assets/favicon.ico" />
         <title>Angel Sharma</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </head>
       <body className={`${poppinsRegular.className} scrollbar-hide`}>
         <SmoothScrolling>{children}</SmoothScrolling>

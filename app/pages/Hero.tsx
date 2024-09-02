@@ -93,11 +93,10 @@ export default function Hero() {
             className="relative"
           >
             <div
-              className="flex rounded-full overflow-hidden bg-white-100 items-center justify-center"
-              style={{ height: "4em", width: "4em" }}
+              className="flex rounded-full overflow-hidden bg-white-100 items-center justify-center h-16 w-16 sm:h-20 sm:w-20 2xl:h-32 2xl:w-32"
             >
               <h1
-                className={`${poppinsBold.className} text-4xl text-black-100`}
+                className={`${poppinsBold.className} text-4xl sm:text-4xl 2xl:text-6xl text-black-100`}
               >
                 Hi!
               </h1>
@@ -110,11 +109,11 @@ export default function Hero() {
           animate={nameControls}
           className="sm:mt-5 items-center flex flex-col sm:flex-row sm:items-start"
         >
-          <span className="text-sm text-white-200 mt-5">I am</span>
+          <span className="text-sm 2xl:text-lg text-white-200 mt-5">I am</span>
         </motion.div>
 
         <div className="align-middle text-center sm:text-left">
-          <span className="relative text-2xl mr-2 text-white">
+          <span className="relative text-2xl 2xl:text-4xl mr-2 text-white">
             {typedText}
             <Image
               src="/assets/gif/bar.gif"
@@ -122,7 +121,7 @@ export default function Hero() {
               width={13}
               unoptimized={true}
               alt="White Image"
-              className="absolute inline-flex align-baseline mt-6 ml-[0.1em]"
+              className="absolute inline-flex align-baseline mt-6 2xl:mt-8 ml-[0.1em]"
             />
           </span>
         </div>
@@ -133,13 +132,13 @@ export default function Hero() {
               width={1}
               height={1}
               alt="Computer SVG"
-              className="w-64 h-auto sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem] z-10"
+              className="w-64 h-auto sm:w-80 sm:h-72 md:w-[35rem] md:h-[25rem] 2xl:w-[44rem] 2xl:h-auto z-9"
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             />
           </div>
 
-        <div className="mb-10 sm:mt-36 sm:mb-48">
+        <div className="mb-10 sm:mt-36 2xl:mt-64 sm:mb-48">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={taglineControls}
@@ -148,13 +147,13 @@ export default function Hero() {
             <div className="mb-3">
               {/* <span className="text-md text-white-200 mr-3">Full Stack</span> */}
               <span
-                className={`${poppinsBold.className} text-3xl sm:text-5xl font-extrabold text-white-100`}
+                className={`${poppinsBold.className} text-3xl sm:text-5xl 2xl:text-7xl font-extrabold text-white-100`}
               >
                 {taglines[currentIndex].title}
               </span>
             </div>
 
-            <div className="max-w-[30em] text-balance text-white-100 text-sm sm:text-base sm:mt-5">
+            <div className="max-w-[30em] text-balance text-white-100 text-sm sm:text-base 2xl:text-xl sm:mt-5">
               {taglines[currentIndex].description}
             </div>
           </motion.div>

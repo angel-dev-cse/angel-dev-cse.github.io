@@ -114,7 +114,7 @@ export default function Cardx({
           <div className="flex flex-col mx-auto rounded-lg overflow-hidden">
             <div className="inline-flex">
               <motion.img
-                className="rounded-lg rounded-b-none object-cover w-56 h-44 sm:h-44 sm:w-auto"
+                className="rounded-lg rounded-b-none object-cover w-56 h-44 sm:w-[18rem]"
                 src={image}
                 alt={title}
                 loading="lazy"
@@ -172,7 +172,7 @@ export default function Cardx({
                 </h1>
               </div>
               <div className="ml-4 sm:mx-4">
-                <p className="text-gray-400 text-sm text-left tracking-wide overflow-hidden line-clamp-5 ">
+                <p className="text-gray-400 text-sm text-left tracking-wide overflow-hidden line-clamp-6">
                   {description}
                 </p>
               </div>
